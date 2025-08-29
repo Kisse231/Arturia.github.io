@@ -59,4 +59,23 @@ document.querySelectorAll('.read-more-button').forEach(button => {
         li[i].style.display = "none";
       }
     }
+
   }
+// calc
+ let layar = document.getElementById("layar");
+ function tambahAngka(nilai) {
+ layar.value += nilai;
+ }
+ function clearLayar() {
+ layar.value = "";
+ }
+ function hapusSatu() {
+ layar.value = layar.value.slice(0, -1);
+ }
+ function hitung() {
+ try {
+ layar.value = eval(layar.value);
+ } catch {
+ layar.value = "Error!";
+ }
+ }
