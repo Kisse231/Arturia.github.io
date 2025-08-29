@@ -89,21 +89,31 @@
                                     
                         </div>
                 <div class="sidebar">
-                    <h5> arturia dancin</h5>
-                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
-                        <ul id="myUL">
-                            <li><a href="gambar/OIP (1).jpeg">Adele</a></li>
-                            <li><a href="gambar/OIP.jpeg">Agnes</a></li>
-                          
-                            <li><a href="index.html">Billy</a></li>
-                            <li><a href="img.html">Bob</a></li>
-                          
-                            <li><a href="ChandraXI-2.html">Calvin</a></li>
-                            <li><a href="baryanto.html">Christina</a></li>
-                            <li><a href="gambar/crazy.gif">Cindy</a></li>
-                          </ul>
-                </div>
-            </div>
+                    <h5> calculator</h5>
+                  <div class="kalkulator">
+ <input type="text" class="layar" id="layar" disabled>
+ <div class="tombol">
+ <button onclick="clearLayar()">C</button>
+ <button onclick="hapusSatu()">←</button>
+ <button onclick="tambahAngka('%')">%</button>
+ <button class="operator" onclick="tambahAngka('/')">/</button>
+ <button onclick="tambahAngka('7')">7</button>
+ <button onclick="tambahAngka('8')">8</button>
+ <button onclick="tambahAngka('9')">9</button>
+ <button class="operator" onclick="tambahAngka('*')">*</button>
+ <button onclick="tambahAngka('4')">4</button>
+ <button onclick="tambahAngka('5')">5</button>
+ <button onclick="tambahAngka('6')">6</button>
+ <button class="operator" onclick="tambahAngka('-')">-</button>
+ <button onclick="tambahAngka('1')">1</button>
+ <button onclick="tambahAngka('2')">2</button>
+ <button onclick="tambahAngka('3')">3</button>
+ <button class="operator" onclick="tambahAngka('+')">+</button>
+ <button onclick="tambahAngka('0')">0</button>
+ <button onclick="tambahAngka('.')">.</button>
+ <button class="equals" onclick="hitung()">=</button>
+ </div>
+ </div>
             <footer>
                 <p> Chandra AW</p>
             </footer>
@@ -111,3 +121,4 @@
             <script src="javascript.js"> </script>
         </body>
     </html>
+
