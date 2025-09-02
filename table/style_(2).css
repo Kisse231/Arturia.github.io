@@ -249,12 +249,13 @@ button{
     }
 	
   .date {
-    color: #ffffff;
+    color: #000000;
 	margin-top: 10px;
 	font-size: 20px;
 	letter-spacing: 1px;
 	text-shadow: 0 0 5px #ffffff;
 	}
+
 
 
 
