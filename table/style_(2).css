@@ -4,7 +4,7 @@ body {
     padding:0;
 }
 header {
-    background-image: url(01.JPG) ;
+    background-image: url(gambar/01.JPG) ;
     /* font-family: 'Times New Roman', Times, serif; */
     width: 100%;
     color: aqua;
@@ -230,4 +230,5 @@ button{
  .tombol .equals:hover {
  background: #2e7d32;
  }
+
 
