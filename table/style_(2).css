@@ -230,6 +230,32 @@ button{
  .tombol .equals:hover {
  background: #2e7d32;
  }
+ .clock-container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px 60px;
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      backdrop-filter: blur(10px);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+    }
+	
+	.clock {
+      color: #FFBBDD;
+      font-size: 64px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-shadow: 0 0 10px #FFAACC;
+    }
+	
+  .date {
+    color: #ffffff;
+	margin-top: 10px;
+	font-size: 20px;
+	letter-spacing: 1px;
+	text-shadow: 0 0 5px #ffffff;
+	}
+
 
 
 
