@@ -33,6 +33,7 @@ header {
 .content {
     flex: 3;
     padding: 20px;
+	background: #fd8775;
 }
 .wrapped-image{
     float: left;
@@ -115,7 +116,7 @@ nav ul li a:hover {
 }
 .content{
     flex-grow: 1;
-    background-color: #ffff;
+    background: #fd8775;
     padding: 20px;
 }
 .content article{
@@ -260,6 +261,7 @@ button{
 
 
  
+
 
 
 
