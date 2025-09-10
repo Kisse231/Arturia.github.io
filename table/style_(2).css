@@ -15,6 +15,7 @@ header {
 .container {
     display: flex;
     margin: 20px;
+	background: #fd8775;
 }
 .sidebar {
     flex: 1;
@@ -259,6 +260,7 @@ button{
 
 
  
+
 
 
 
