@@ -100,5 +100,53 @@ document.querySelectorAll('.read-more-button').forEach(button => {
       const fullDate = `${day}, ${date} ${month} ${year}`; 
       document.getElementById('dateDisplay').textContent = fullDate; 
     } 
+
+ document.addEventListener('DOMContentLoaded', () => {
+            const track = document.getElementById('carousel-track');
+            const prevButton = document.getElementById('prev-button');
+            const nextButton = document.getElementById('next-button');
+            const indicators = document.querySelectorAll('.indicator');
+            let currentIndex = 0;
+            const totalSlides = 4;
+            function updateCarousel() {
+                track.style.transform = `translateX(-${currentIndex * 100}%)`;
+                indicators.forEach((ind, index) => {
+                    ind.classList.toggle('active', index === currentIndex);
+                });
+            }
+            nextButton.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateCarousel();
+            });
+            prevButton.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+                updateCarousel();
+            });
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateCarousel();
+                });
+            });
+            // Autoplay with pause on hover
+            let autoplayInterval = setInterval(() => {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateCarousel();
+            }, 3000);
+            const carousel = document.querySelector('.carousel');
+            carousel.addEventListener('mouseenter', () => clearInterval(autoplayInterval));
+            carousel.addEventListener('mouseleave', () => {
+                autoplayInterval = setInterval(() => {
+                    currentIndex = (currentIndex + 1) % totalSlides;
+                    updateCarousel();
+                }, 3000);
+            });
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowRight') nextButton.click();
+                else if (e.key === 'ArrowLeft') prevButton.click();
+            });
+        });
     setInterval(updateClock, 1000); 
     updateClock(); 
+
